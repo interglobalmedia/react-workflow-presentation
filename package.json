@@ -1,0 +1,32 @@
+{
+    "name": "react-workflow-presentation",
+    "version": "0.0.1",
+    "private": true,
+    "description": "A Presentation About Custom React Workflows Without CRA",
+    "main": "index.js",
+    "directories": {
+        "lib": "lib"
+    },
+    "scripts": {
+        "clean": "rimraf dist && mkdir dist",
+        "prebuild": "cp index.html dist/",
+        "build": "cp -R plugin lib js images css dist/",
+        "postbuild": "gh-pages -d dist"
+    },
+    "dependencies": {
+        "gh-pages": "^2.0.1"
+    },
+    "devDependencies": {
+        "rimraf": "^2.6.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/interglobalmedia/react-workflow-presentation.git"
+    },
+    "author": "Maria D. Campbell",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/interglobalmedia/react-workflow-presentation/issues"
+    },
+    "homepage": "https://github.com/interglobalmedia/react-workflow-presentation#readme"
+}
